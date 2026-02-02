@@ -1,9 +1,16 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { Link } from "react-router";
 
-const StyledLogo = styled.div`
+const StyledLogo = styled(Link)`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  ${(props) =>
+    props.transformY === "Y" &&
+    css`
+      margin-top: 5rem;
+    `}
 `;
 
 const LogoIcon = styled.img`
@@ -25,9 +32,9 @@ const LogoText = styled.span`
   transform: translateY(-15px);
 `;
 
-function Logo() {
+function Logo({ to, transformY }) {
   return (
-    <StyledLogo>
+    <StyledLogo to={to} transformY={transformY}>
       <LogoIcon src="./light-logo.png" />
       <LogoText>FinTrack</LogoText>
     </StyledLogo>

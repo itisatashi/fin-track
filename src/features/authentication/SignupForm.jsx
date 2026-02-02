@@ -9,8 +9,10 @@ import FormRow from "../../ui/FormRow";
 const ButtonRow = styled.div`
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 1.2rem;
   padding-top: 1.2rem;
+  padding-right: 3.5rem;
 `;
 
 function SignupForm() {
@@ -23,7 +25,7 @@ function SignupForm() {
       { fullName, email, password },
       {
         onSettled: () => reset(),
-      },
+      }
     );
   }
 
