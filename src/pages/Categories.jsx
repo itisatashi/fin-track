@@ -22,7 +22,6 @@ const Empty = styled.p`
 
 function Categories() {
   const { categories, isLoading } = useCategories();
-
   if (isLoading) return <Spinner />;
 
   return (

@@ -71,7 +71,7 @@ function TransactionForm({ transactionToEdit = {}, onCloseModal }) {
             reset();
             onCloseModal?.();
           },
-        },
+        }
       );
     } else {
       createTransaction(
@@ -85,7 +85,7 @@ function TransactionForm({ transactionToEdit = {}, onCloseModal }) {
             reset();
             onCloseModal?.();
           },
-        },
+        }
       );
     }
   }
@@ -169,8 +169,8 @@ function TransactionForm({ transactionToEdit = {}, onCloseModal }) {
           {isWorking
             ? "Saving..."
             : isEditSession
-              ? "Update Transaction"
-              : "Add Transaction"}
+            ? "Update Transaction"
+            : "Add Transaction"}
         </Button>
       </ButtonRow>
     </Form>
