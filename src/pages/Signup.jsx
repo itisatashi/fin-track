@@ -13,9 +13,9 @@ const SignupLayout = styled.main`
   padding: 4rem 0;
 `;
 
-const Heading = styled.h4`
+const Heading = styled.h1`
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
   color: var(--color-grey-700);
   margin-bottom: 4rem;
